@@ -1,6 +1,9 @@
 # webr + lit + vite npm template
 
-![dark mode](img/dark.png) ![light mode](img/light.png)
+<div style="width:100vw">
+<img alt="dark mode" src="img/dark.png" style="width:50vw;float:left;"/>
+<img alt="light mode" src="img/light.png" style="width:50vw;float:right;"/>
+</div>
 
 A quick way to start a new WebR project with:
 
