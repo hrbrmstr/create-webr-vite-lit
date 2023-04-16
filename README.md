@@ -1,9 +1,13 @@
 # webr + lit + vite npm template
 
-<div style="width:100vw">
-<img alt="dark mode" src="img/dark.png" style="width:50vw;float:left;"/>
-<img alt="light mode" src="img/light.png" style="width:50vw;float:right;"/>
-</div>
+![npm](https://img.shields.io/npm/v/create-webr-vite-lit) ![license](https://img.shields.io/badge/license-MIT-success)
+
+
+<img alt="dark mode" src="img/dark.png" style="width:50vw"/> 
+
+
+<img alt="light mode" src="img/light.png" style="width:50vw"/>
+
 
 A quick way to start a new WebR project with:
 
