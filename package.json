@@ -1,0 +1,23 @@
+{
+  "name": "create-webr-vite-lit",
+  "version": "0.1.0",
+  "description": "A template for creating WebR projects using Vite and Lit",
+  "bin": {
+    "create-webr-vite-lit": "./create.js"
+  },
+  "keywords": [
+    "webR",
+    "vite",
+    "lit"
+  ],
+  "dependencies": {
+    "@r-wasm/webr": "^0.1.1",
+    "vite": "^4.2.0",
+    "lit": "^2.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrbrmstr/create-webr-vite-lit.git"
+  },
+  "license": "MIT"
+}

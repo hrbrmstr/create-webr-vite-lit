@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+
+section {
+	margin: 2em 0 4em;
+}
+
+.grid-demo {
+	grid-auto-rows: minmax(50px, auto);
+}
+
+.grid-demo>* {
+	background: var(--primary);
+	min-height: 3rem;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+}
+
+.grid-demo>*:nth-child(even) {
+	background: #3f5aa4;
+}
+
+:root {
+	--plot-primary: #001e38;
+	--blockquote-bg: #f5f5f5;
+	--monospace-color: #555555;
+}
+
+html,body,h1,h2,h3,h4,h5,div,span {
+	font-family: 'Rubik', serif;
+  /* font-family: Inter, -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; */
+}
+
+pre, code, samp, time {
+  font-family: 'DM Mono', monospace;
+	color: var(--monospace-color);
+}
+
+@media (prefers-color-scheme:dark) {
+:root {
+	--plot-primary: #4a6d88;
+	--blockquote-bg: #333333;
+	--monospace-color: #bfbfbf;
+}
+
+:root {
+		--white: #111;
+		--grey: #2d2d2d;
+		--black: #eee;
+		--green: #0ab29e;
+		--blue: #5d78db;
+		--orange: #e3931d;
+		--red: #f7523b;
+		--primary: var(--blue);
+		--secondary: var(--green);
+		--background: #111;
+		--background-alt: #1a1a1a;
+		--selection: #666;
+		--text-main: #eee;
+		--text-bright: #fff;
+		--text-muted: #888;
+		--links: var(--primary);
+		--focus: rgba(93, 120, 219, .35);
+		--border: rgba(255, 255, 255, .2);
+		--border-radius: 4px;
+		--code: #fff;
+		--animation-duration: .1s;
+		--button-hover: #444;
+		--button-shadow: 0 4px 6px -1px rgba(255, 255, 255, .1), 0 2px 4px -1px rgba(255, 255, 255, .06);
+		--form-placeholder: #aaa;
+		--form-text: #fff;
+		--variable: #0ab29e;
+		--highlight: #ff0;
+		--select-arrow: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='62.5' width='116.9' fill='%23eee'%3E%3Cpath d='M115.3 1.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1L7.4 1.6C5.8 0 3.2 0 1.6 1.6 0 3.2 0 5.8 1.6 7.4l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z'/%3E%3C/svg%3E");
+		--heading-margin: .5rem 0 .75rem;
+		--typo-size-1: 2.8rem;
+		--typo-size-2: 2.2rem;
+		--typo-size-3: 1.8rem;
+		--typo-size-4: 1.4rem;
+		--typo-size-5: 1.2rem;
+		--typo-size-6: 1rem;
+		--wrapper: 1280px;
+		--transition: all ease .4s;
+		--accent-border: 0;
+		--accent-shadow: 0 10px 15px -3px rgba(255, 255, 255, .1), 0 4px 6px -2px rgba(255, 255, 255, .05);
+	}
+}
