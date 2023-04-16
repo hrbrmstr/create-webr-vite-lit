@@ -3,10 +3,9 @@
 ![npm](https://img.shields.io/npm/v/create-webr-vite-lit) ![license](https://img.shields.io/badge/license-MIT-success)
 
 
-<img alt="dark mode" src="dark.png" style="width:50vw"/> 
+![dark mode](dark.png)
 
-
-<img alt="light mode" src="light.png" style="width:50vw"/>
+![light mode](light.png)
 
 
 A quick way to start a new WebR project with:
