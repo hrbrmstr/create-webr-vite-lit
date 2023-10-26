@@ -2,7 +2,7 @@
   "name": "create-webr-vite-lit",
   "author": "boB Rudis",
   "readme": "README.md",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A template for creating WebR projects using Vite and Lit",
   "bin": {
     "create-webr-vite-lit": "./create.js"
@@ -14,9 +14,9 @@
     "template"
   ],
   "dependencies": {
-    "@r-wasm/webr": "^0.1.1",
-    "vite": "^4.2.0",
-    "lit": "^2.6.1"
+    "@webr": "^0.2.1",
+    "vite": "^4.5.0",
+    "lit": "^3.0.0"
   },
   "repository": {
     "type": "git",
