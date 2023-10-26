@@ -14,7 +14,7 @@
     "template"
   ],
   "dependencies": {
-    "@webr": "^0.2.1",
+    "webr": "^0.2.1",
     "vite": "^4.5.0",
     "lit": "^3.0.0"
   },
