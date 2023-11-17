@@ -1,7 +1,6 @@
 # This is a justfile (https://github.com/casey/just)
 # Good cheatsheet (https://cheatography.com/linux-china/cheat-sheets/justfile/)
 
-
 # base production deployment path
 # No `/` at the end!
 # MAKE SURE TO CHANGE `base: '/',` in vite.config.js to match final deployment

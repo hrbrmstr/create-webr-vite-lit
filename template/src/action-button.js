@@ -33,7 +33,10 @@ export class ActionButton extends LitElement {
 		return when(
 			this.label === '',
 			() => html`<div></div>`,
-			() => html`<button ${dis} @click="${this._handleClick}" id="${this.id}">${this.label}</button>`
+      () => html`
+      <a @click="${this._handleClick}" id="${this.id}" 
+         class="${dis} f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-blue" href="#0">${this.label}</a>
+      `
 		)
 	}
 

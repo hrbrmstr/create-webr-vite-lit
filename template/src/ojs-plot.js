@@ -34,13 +34,17 @@ export class OJSPlot extends LitElement {
 
 		inspect && console.log("render")
 
+    if (this.chartOptions) {
+      this.chartOptions.title = this.chartTitle
+    }
+    
 		const renderedPlot = this.chartOptions && Plot.plot(this.chartOptions)
 
 		return when(this.chartOptions === null,
 			() => html`<div></div>`,
 			() => html`<div>
-			<h3 class="primary">${this.chartTitle}</h3>
-			${renderedPlot}
+			  <!-- h3 class="primary">${this.chartTitle}</h3 -->
+			  ${renderedPlot}
 			</div>`
 		)
 

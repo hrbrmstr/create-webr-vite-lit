@@ -16,11 +16,10 @@ export class StatusMessage extends LitElement {
 
 	render() {
 		// return html`<div>${crossOriginIsolated ? '🔵' : '🌕'} ${this.text}</div>`;
-		return html`
-		<span class="group">
-		  <span class="tag black">WebR</span>
-		  <span id="msg" class="tag ${crossOriginIsolated ? 'primary' : 'gray'}">${this.text}</span>
-  	</span>
+    return html`
+    <div class="dib ba br2 overflow-hidden f7">
+      <span class="dib pa2 bg-dark-gray white br2 br--left mr0">WebR</span><span class="dib pa2 ${crossOriginIsolated ? "bg-dark-blue" : "bg-dark-grey"} white br2 br--right ml0">${this.text}</span>
+    </div>
 		`
 	}
 

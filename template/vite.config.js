@@ -1,10 +1,8 @@
 import { defineConfig } from 'vite'
-import topLevelAwait from "vite-plugin-top-level-await";
-import webfontDownload from 'vite-plugin-webfont-dl';
-import urlResolve from 'rollup-plugin-url-resolve';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import esbuild from 'rollup-plugin-esbuild';
+import topLevelAwait from "vite-plugin-top-level-await";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,26 +14,21 @@ export default defineConfig({
 			formats: [ 'es' ]
     },
 		rollupOptions: {
-			plugins: [
-				urlResolve({
-					cacheManager: '.cache',
-					minify: true,
-				}),
+      plugins: [
+        topLevelAwait({
+          promiseExportName: "__tla",
+          promiseImportName: i => `__tla_${i}`
+        }),
 				resolve({ browser: true }),
 				commonjs(),
 				esbuild({
 					minify: true,
-					target: 'es2022', 
+					target: 'esnext', 
 				})
 			]
 		},
 	},
 	plugins: [
-		topLevelAwait({
-			promiseExportName: "__tla",
-			promiseImportName: i => `__tla_${i}`
-		}),
-		webfontDownload(),
 	],
 	server: {
 		headers: {

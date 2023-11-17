@@ -1,8 +1,9 @@
-@import url('bonsai.min.css');
+@import url('tachyons.min.css');
 
 :host ojs-plot {
 	--light-plot-background: white;
   --dark-plot-background: #1c1c1e;
 	--light-plot-div-color: white;
 	--dark-plot-div-color: #1c1c1e;
+  --blue: hsl(216.34, 58.2%, 52.16%);
 }
